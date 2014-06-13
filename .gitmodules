@@ -1,0 +1,3 @@
+[submodule "zonotope.js"]
+	path = zonotope.js
+	url = git@github.com:vindvaki/zonotope.js.git
