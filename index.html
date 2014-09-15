@@ -15,30 +15,24 @@
 
 	 html {
 		 background: #eee;
-		 margin: 0 0 0 0;
-		 padding: 0 0 0 0;
+		 margin: 0;
+		 padding: 0;
 	 }
 
 	 body {
 		 position: relative;
 		 background: #fff;
-		 padding: var(--body-padding);
 		 
 		 font-family: "Open Sans", sans-serif;
 		 font-size: 18px;
-
+		 
 		 padding: 20px;
 		 
+		 width: 100% - 40px;
+		 margin: 20px 0 20px 0;
 	 }
 	 
-	 @media (max-width: 540px) {
-		 body {
-			 width: 100% - 40px;
-			 margin: 20px 0 20px 0;
-		 }
-	 }
-
-	 @media (min-width: 541px) {
+	 @media (min-width:541px) and (min-device-width: 541px) {
 		 body {
 			 width: 540px;
 			 margin: 20px auto 20px auto;
