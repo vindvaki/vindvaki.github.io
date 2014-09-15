@@ -12,31 +12,48 @@
 
 	 @import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 	 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-	 
+
 	 html {
 		 background: #eee;
 		 margin: 0 0 0 0;
 		 padding: 0 0 0 0;
 	 }
-	 
+
 	 body {
 		 position: relative;
 		 background: #fff;
-		 width: 500px;
-		 padding: 20px;
-		 margin: 20px auto 20px auto;
+		 padding: var(--body-padding);
 		 
 		 font-family: "Open Sans", sans-serif;
 		 font-size: 18px;
+
+		 padding: 20px;
+		 
 	 }
 	 
+	 @media (max-width: 540px) {
+		 body {
+			 width: 100% - 40px;
+			 margin: 20px 0 20px 0;
+		 }
+	 }
+
+	 @media (min-width: 541px) {
+		 body {
+			 width: 540px;
+			 margin: 20px auto 20px auto;
+		 }
+	 }
+
+
+
 	 h1, h2 {
 		 font-family: "Slabo 27px", serif;
 		 margin: 0;
 	 }
 
 	 h1 {
-		 font-size: 50px;
+		 font-size: 44px;
 	 }
 
 	 h2 {
